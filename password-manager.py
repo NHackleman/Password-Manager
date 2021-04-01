@@ -53,18 +53,17 @@ def show_all():
         print_box = '\n'.join(current_line)
         messagebox.showinfo('Password List', print_box)
 
-
 # MongoDB Access
-cluster = MongoClient("mongodb+srv://admin:admin@cluster0.dxsn3.mongodb.net/passwordManager?retryWrites=true&w=majority")
-db = cluster["passwordManager"]
-collection = db["passwords"]
+cluster = MongoClient("*Input URL to MongoDB database here*")
+db = cluster["*Input Cluster name here*"]
+collection = db["*Input Collection name here*"]
 id = 0
 password = ''
 
 # Tkinter Window Config
 root = Tk()
 root.title('Password Manager')
-root.iconbitmap('C:/Users/nhack/Desktop/Code/Python/MongoDB/Password-Manager/password.ico')
+root.iconbitmap('*path to*password.ico')
 
 # Radio button frame
 frame_radio = LabelFrame(root)
