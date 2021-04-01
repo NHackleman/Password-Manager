@@ -55,7 +55,7 @@ def show_all():
 
 
 # MongoDB Access
-cluster = MongoClient("*Input URL to MongoDB Database here*")
+cluster = MongoClient("mongodb+srv://admin:admin@cluster0.dxsn3.mongodb.net/passwordManager?retryWrites=true&w=majority")
 db = cluster["passwordManager"]
 collection = db["passwords"]
 id = 0
@@ -64,7 +64,7 @@ password = ''
 # Tkinter Window Config
 root = Tk()
 root.title('Password Manager')
-root.iconbitmap('password.ico')
+root.iconbitmap('C:/Users/nhack/Desktop/Code/Python/MongoDB/Password-Manager/password.ico')
 
 # Radio button frame
 frame_radio = LabelFrame(root)
